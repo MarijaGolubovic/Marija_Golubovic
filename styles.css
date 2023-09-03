@@ -1,0 +1,347 @@
+/* Osnovni stil za celu stranicu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+h1{
+    margin-left: 5%;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Stil za sidebar */
+.sidebar {
+    background-color: #131212;
+    color: white;
+    width: 200px;
+    position: fixed; /* Postavljamo meni kao fiksiran */
+    top: 0; /* Postavljamo meni na vrh stranice */
+    left: 0; /* Postavljamo meni na levi rub stranice */
+    bottom: 0; /* Proširujemo meni do dna stranice */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stil za linkove u sidebaru */
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 30px;
+}
+
+
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Stil za sadržaj */
+.content {
+    flex-grow: 1;
+    margin-left: 200px; /* Pomera sadržaj za širinu menija da bi se oslobodilo mesto za meni */
+    padding: 20px;
+}
+
+/* Stil za aktivni link u sidebaru */
+.sidebar a.active {
+    font-weight: bold;
+}
+
+.sidebar_icon{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    background-color: #131212;
+
+}
+
+/* Stil za profilnu sliku */
+
+.profile_image_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile_image_caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profile_image_caption p{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Kontakt panelispod profilne slike */
+.contact_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-color: rgb(54, 53, 52);
+}
+
+/* Home section */
+.home_section{
+    width: 700px;
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 20%;
+    background-color: #f1f0f0;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+
+.home_profile_image_panel{
+    margin-bottom: 10%;
+    margin-left: 10px;
+}
+.intro_image{
+    border-radius: 30%;
+    width: 180px;
+    height: 180px;
+    border: 5px solid #ddd7d7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 95%;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.intro-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: cursive;
+    
+
+}
+
+.highlighted{
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Education panel */
+.education_panel{
+    width: 700px;
+    height: 400px;
+    margin-left: 20%;
+    background-color: #f1f0f0;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.1); 
+    display: flex;
+
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.high_school {
+    width: 50%;
+    height: 350px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #f7f5f5;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.3); 
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.faculty {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #f7f5f5;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.3); 
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.img_high_school{
+    width: 200px;
+    height: 150;
+}
+
+.img_faculty{
+    width: 180px;
+    height: 100;
+}
+
+.education_title{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.education_text{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.bachelor{
+    color: #000000;
+}
+
+/* pop up meniji - detalji o obrazovanju */
+
+.high_school_detail{
+    display: none;
+    position: absolute;
+    margin-right: 30%;
+    background-color: #131212;
+    width: 250px;
+    height: 200px;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.4); 
+    opacity: 85%;
+    cursor: pointer;
+}
+
+.education_detail_text{
+    font: 12px;
+    color: white;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.high_school:hover + .high_school_detail{
+    display: block;
+}
+
+.faculty_detail{
+    display: none;
+    position: absolute;
+    margin-left: 23%;
+    background-color: #131212;
+    width: 270px;
+    height: 350px;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.4); 
+    opacity: 85%;
+    cursor: pointer;
+}
+
+.faculty_detail_text{
+    text-align: right;
+}
+
+.faculty:hover + .faculty_detail{
+    display: block;
+}
+
+/* Panle sa iskustvima stecenim u proteklom periodu */
+.experience_panel{
+    width: 700px;
+    height: 400px;
+    margin-left: 20%;
+    background-color: #f1f0f0;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.expirience_small_box {
+    width: 200px;
+    height: 170px;
+    background-color: #f7f5f5;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    opacity: 0;
+    padding: 10px;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.2s ease-in-out;
+    animation: scroll 10s linear infinite; /* Animacija skrolovanja */
+
+}
+
+.show {
+    opacity: 1;
+}
+
+.slide {
+    transform: translateX(0);
+}
+
+/* Expirience small images */
+.expirience_image{
+    height: 100px;
+    width: 150px;
+}
+.exp_type{
+    color: #131212;
+    font-weight: bold;
+}
+.exp_duration{
+    color: #333333;
+}
+
+/* Expirience detail */
+.expirience_detail{
+    display: none;
+    position: absolute;
+    margin-bottom: 15%;
+    background-color: #131212;
+    width: 230px;
+    height: 220px;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.4); 
+    opacity: 85%;
+    cursor: pointer;
+}
+
+.expirience_small_box:hover + .expirience_detail{
+    display: block;
+}
