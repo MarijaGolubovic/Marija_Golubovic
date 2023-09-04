@@ -428,16 +428,14 @@ h1{
   }
 
 
-@media screen and (max-width: 768px) {
-    .experience_panel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  @media (max-width: 768px) {
+    .expirience_small_box img {
+        max-width:70px; /* Prilagodite veličinu slike za manje ekrane */
+        height: auto;
     }
+    .expirience_image{
+        height: 30px;
+        width: 50px;
 
-    .expirience_small_box,
-    .expirience_detail {
-        margin: 0; 
-        width: 100%;
     }
 }
