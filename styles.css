@@ -426,3 +426,18 @@ h1{
   .mail_contact_link:hover{
     color: #adaaaa;
   }
+
+
+@media screen and (max-width: 768px) {
+    .experience_panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expirience_small_box,
+    .expirience_detail {
+        margin: 0; 
+        width: 100%;
+    }
+}
