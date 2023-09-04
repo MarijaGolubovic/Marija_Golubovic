@@ -134,7 +134,19 @@ h1{
     opacity: 95%;
     transition: background-color 0.3s ease-in-out;
 
+    transform-style: preserve-3d;
+    animation: flip 1.2s ease-in-out forwards;
 }
+
+@keyframes flip {
+    100% {
+        transform: rotateY(360deg);
+    }
+    0% {
+        transform: rotateY(0deg);
+    }
+}
+
 .intro-text {
     margin-top: 20px;
     font-size: 18px;
@@ -407,5 +419,10 @@ h1{
       }
   }
   
-
- 
+  /* Kontakti */
+  .mail_contact_link:link{
+    color: #3d3d3d;
+  }
+  .mail_contact_link:hover{
+    color: #adaaaa;
+  }
