@@ -8,6 +8,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Expirience panel
 const sections = document.querySelectorAll('.section');
 const bigBox = document.querySelector('.experience_panel');
 const smallBoxes = document.querySelectorAll('.expirience_small_box');
@@ -47,6 +48,7 @@ sections.forEach((section, index) => {
 });
 
 
+// education panel
 const facultyPanel = document.querySelector('.faculty');
 const highSchoolPanel = document.querySelector('.high_school');
 
@@ -74,9 +76,6 @@ window.addEventListener('scroll', () => {
         educationPanel.style.opacity = 1;
     }
 });
-
-
-
 
 
 
